@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Choose Food ❤️</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="music/love.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+  <div class="card">
+    <h1 style="font-size:clamp(30px,6vw,46px);">🍽️ Choose Our Food</h1>
+    <p class="subtitle">Select anything you'd love to eat ❤️</p>
+
+    <div class="food-list">
+      <label><input type="checkbox" value="Pizza"> 🍕 Pizza</label>
+      <label><input type="checkbox" value="Burger"> 🍔 Burger</label>
+      <label><input type="checkbox" value="Pasta"> 🍝 Pasta</label>
+      <label><input type="checkbox" value="Coffee"> ☕ Coffee</label>
+      <label><input type="checkbox" value="Ice Cream"> 🍨 Ice Cream</label>
+      <label><input type="checkbox" value="Soft Drinks"> 🥤 Soft Drinks</label>
+      <label><input type="checkbox" value="Juice"> 🧃 Juice</label>
+      <label><input type="checkbox" value="French Fries"> 🍟 French Fries</label>
+      <label><input type="checkbox" value="Cakes / Pastries"> 🍰 Cakes / Pastries</label>
+      <label><input type="checkbox" value="Fried Chicken"> 🍗 Fried Chicken</label>
+      <label><input type="checkbox" value="Popcorn"> 🍿 Popcorn</label>
+      <label><input type="checkbox" value="Chips / Crisps"> 🥨 Chips / Crisps</label>
+      <label><input type="checkbox" value="Nuts"> 🥜 Nuts</label>
+      <label><input type="checkbox" value="Chatpati"> 🌶️ Chatpati</label>
+      <label><input type="checkbox" value="Fuchka"> 🥟 Fuchka (pani puri)</label>
+    </div>
+
+    <div class="buttons" style="margin-top:30px;">
+      <button class="yes" onclick="saveFood()">Next ❤️</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
