@@ -170,14 +170,14 @@ function sendToGoogleSheets(data) {
 // Say Something Form
 function saySomething() {
   const questions = [
-    "What do you usually do in your free time? (tea or coffee?)",
+    "Say some about me like my charecter,personality,lifestyle,general knoeledge,mistake,bad decision etc? (tea or coffee?)",
     "Beach or mountains?",
     "What’s your favorite food?",
     "What’s your favorite color?",
     "Do you like movies or dramas more?",
     "What makes you happy the most?",
-    "What is your dream job?",
-    "Do you like traveling? Where do you want to go?",
+    "Whay you answer this question?",
+    "Do you like traveling? Want to travel with me?",
     "What kind of music do you listen to?"
   ];
 
