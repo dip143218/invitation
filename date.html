@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Pick Our Date ❤️</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="music/love.mp3" type="audio/mpeg">
+</audio>
+
+<div id="mainPage">
+  <div class="card">
+    <div class="flower">📅</div>
+    <h1>When Should We Meet?</h1>
+    <p>Tap a quick option below, or pick your own date and time ❤️</p>
+
+    <div class="date-form">
+      <label>Date</label>
+      <div class="chip-group">
+        <button type="button" class="chip date-chip" onclick="pickQuickDate('today', this)">Today</button>
+        <button type="button" class="chip date-chip" onclick="pickQuickDate('tomorrow', this)">Tomorrow</button>
+        <button type="button" class="chip date-chip" onclick="pickQuickDate('weekend', this)">This Weekend</button>
+        <button type="button" class="chip date-chip" onclick="pickQuickDate('nextweek', this)">Next Week</button>
+      </div>
+      <div class="or-divider">or choose a custom date</div>
+      <input type="date" id="datePicker">
+
+      <label style="margin-top:22px;">Time</label>
+      <div class="chip-group">
+        <button type="button" class="chip time-chip" onclick="pickQuickTime('10:00', this)">Morning · 10:00 AM</button>
+        <button type="button" class="chip time-chip" onclick="pickQuickTime('14:00', this)">Afternoon · 2:00 PM</button>
+        <button type="button" class="chip time-chip" onclick="pickQuickTime('18:00', this)">Evening · 6:00 PM</button>
+        <button type="button" class="chip time-chip" onclick="pickQuickTime('20:00', this)">Night · 8:00 PM</button>
+      </div>
+      <div class="or-divider">or choose a custom time</div>
+      <input type="time" id="timePicker">
+    </div>
+
+    <div class="buttons">
+      <button class="yes" onclick="saveDate()">Next ❤️</button>
+    </div>
+    <button class="skip-link" onclick="skipDate()">Skip for now →</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
