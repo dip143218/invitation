@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Will You Go On A Date With Me? ❤️</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="loading">
+  <div class="envelope" onclick="openEnvelope()">
+    <div class="letter">
+      💌
+      <h2>A Little Surprise</h2>
+      <p>Tap To Open</p>
+    </div>
+  </div>
+</div>
+
+<audio id="bgMusic" loop>
+  <source src="music/love.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn" onclick="toggleMusic()">▶️</button>
+
+<div id="mainPage">
+  <div class="card">
+    <div class="flower">🌸</div>
+    <h1>Will You Go On A Date With Me?</h1>
+    <p>I've been thinking about this moment for a long time. Maybe this is a little different, but I wanted to ask you in a way you'll always remember. ❤️</p>
+
+    <div class="buttons">
+      <button class="yes" onclick="goNext()">YES ❤️</button>
+      <button class="no" id="noBtn">NO 🙈</button>
+    </div>
+
+    <div class="hint">✨ Tap the flower below</div>
+    <div class="secretFlower" onclick="secretMessage()">🌸</div>
+
+    <h3 style="margin-top:30px;color:#ff4f87;font-family:'Dancing Script',cursive;font-size:26px;">
+      See you at 🌸 CUET Campus 🌸
+    </h3>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
