@@ -170,7 +170,7 @@ function sendToGoogleSheets(data) {
 // Say Something Form
 function saySomething() {
   const questions = [
-    "Say some about you?",
+    "Say some about you ?",
     "Beach or mountains?",
     "What’s your favorite food?",
     "What’s your favorite color?",
