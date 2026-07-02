@@ -98,7 +98,7 @@ function saveDate(){
   const time = timeInput ? timeInput.value : "";
 
   if(!date || !time){
-    alert("Please select both Date and Time ❤️");
+    alert("Please select both Date and Time ");
     return;
   }
 
@@ -170,13 +170,13 @@ function sendToGoogleSheets(data) {
 // Say Something Form
 function saySomething() {
   const questions = [
-    "Say some about me like my charecter,personality,lifestyle,general knoeledge,mistake,bad decision etc? (tea or coffee?)",
+    "Say some about you?",
     "Beach or mountains?",
     "What’s your favorite food?",
     "What’s your favorite color?",
     "Do you like movies or dramas more?",
     "What makes you happy the most?",
-    "Whay you answer this question?",
+    "Why are you answer this question?",
     "Do you like traveling? Want to travel with me?",
     "What kind of music do you listen to?"
   ];
